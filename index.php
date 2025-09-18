@@ -6,17 +6,18 @@
     <title>лента</title>
 </head>
 <body>
-    <header>
-        <h1>Tipix</h1>
-    </header>
-    <aside>
-
-    </aside>
+    <?php
+        require "blocks/header.php";
+        require "blocks/aside.php";
+    ?>
     <main>
-        <p>Ой тут пусто</p>
+        <form action="opps.php" method="post">
+            <input type="text" name="post" placeholder="Что нового">
+            <button type="submit">Отправить</button>
+        </form>
     </main>
-    <footer>
-        <p>&copy; Все права защищены</p>
-    </footer>
+    <?php
+        include "blocks/footer.php";
+    ?>
 </body>
 </html>
